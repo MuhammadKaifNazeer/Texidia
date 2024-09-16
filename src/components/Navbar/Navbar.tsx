@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggler } from "../ThemeToggler/ThemeToggler";
+import { ShareButton } from "../ShareButton/ShareButton";
 
 const Navbar: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const Navbar: React.FC = () => {
           <h2 className="text-lg font-semibold">Texidia</h2>
           <div className="flex space-x-2 justify-end">
             <Button variant={"outline"}>View Code</Button>
-            <Button variant={"default"}>Share</Button>
+            <ShareButton />
             <ThemeToggler />
           </div>
         </div>
