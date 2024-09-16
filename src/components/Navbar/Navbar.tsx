@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
           <h2 className="text-lg font-semibold">Texidia</h2>
           <div className="flex space-x-2 justify-end">
             <Link
-              href={"https://github.com/MuhammadKaifNazeer/Texidia.git"}
+              href={"https://github.com/MuhammadKaifNazeer/Texidia"}
               target="_blank"
             >
               <Button variant={"outline"}>View Code</Button>

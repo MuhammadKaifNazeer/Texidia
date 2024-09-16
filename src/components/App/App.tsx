@@ -53,20 +53,20 @@ const App: React.FC = () => {
   };
 
   // Highlighting find text in the textarea
-  const getHighlightedText = () => {
-    if (!findText) return text;
+  // const getHighlightedText = () => {
+  //   if (!findText) return text;
 
-    const parts = text.split(new RegExp(`(${findText})`, "gi"));
-    return parts.map((part, index) =>
-      part.toLowerCase() === findText.toLowerCase() ? (
-        <mark key={index} style={{ backgroundColor: "yellow" }}>
-          {part}
-        </mark>
-      ) : (
-        part
-      ),
-    );
-  };
+  //   const parts = text.split(new RegExp(`(${findText})`, "gi"));
+  //   return parts.map((part, index) =>
+  //     part.toLowerCase() === findText.toLowerCase() ? (
+  //       <mark key={index} style={{ backgroundColor: "yellow" }}>
+  //         {part}
+  //       </mark>
+  //     ) : (
+  //       part
+  //     ),
+  //   );
+  // };
 
   return (
     <>
@@ -79,9 +79,9 @@ const App: React.FC = () => {
               placeholder="Enter your text here..."
               className="w-full h-full resize-none"
             />
-            <div className="relative top-0 left-0 w-full h-full p-2 pointer-events-none whitespace-pre-wrap overflow-hidden">
+            {/* <div className="relative top-0 left-0 w-full h-full p-2 pointer-events-none whitespace-pre-wrap overflow-hidden">
               {getHighlightedText()}
-            </div>
+            </div> */}
           </div>
           <div className="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3 space-y-2">
             <div className="w-full flex flex-col">
