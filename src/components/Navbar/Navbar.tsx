@@ -1,22 +1,17 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Ellipsis } from "lucide-react";
+import { ThemeToggler } from "../ThemeToggler/ThemeToggler";
 
 const Navbar: React.FC = () => {
   return (
     <div>
-      <div className="hidden h-full flex-col md:flex border-b">
-        <div className="container flex flex-col items-start justify-between space-y-2 py-4 sm:flex-row sm:items-center sm:space-y-0 md:h-16">
-          <h2 className="text-lg font-semibold">Playground</h2>
-          <div className="ml-auto flex w-full space-x-2 sm:justify-end">
-            <Button variant={"secondary"}>Save</Button>
-            <div className="hidden space-x-2 md:flex">
-              <Button variant={"secondary"}>View Code</Button>
-              <Button variant={"secondary"}>Share</Button>
-              <Button variant={"secondary"} size={"icon"}>
-                <Ellipsis />
-              </Button>
-            </div>
+      <div className="h-full flex-col flex border-b">
+        <div className="flex items-center justify-between w-full md:h-16 px-2 sm:px-4 md:px-6 py-4 max-w-7xl mx-auto">
+          <h2 className="text-lg font-semibold">Texidia</h2>
+          <div className="flex space-x-2 justify-end">
+            <Button variant={"outline"}>View Code</Button>
+            <Button variant={"default"}>Share</Button>
+            <ThemeToggler />
           </div>
         </div>
       </div>
